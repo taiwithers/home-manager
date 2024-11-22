@@ -49,7 +49,7 @@ let
       IsRelative = 1;
       Default = if profile.isDefault then 1 else 0;
     }) // {
-      General = { StartWithLastProfile = 1; };
+      General = { StartWithLastProfile = 0; };
     };
 
   profilesIni = generators.toINI { } profiles;
